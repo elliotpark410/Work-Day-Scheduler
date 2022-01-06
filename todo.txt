@@ -2,6 +2,7 @@ Create git repository
 Clone to local machine 
 Create live page in Github
 Submit Github repo to Bootcamp Spot
+Watch class video on 1/4/2022
 Read README.md 
 Look at Student Resources
 Create pseudocode
