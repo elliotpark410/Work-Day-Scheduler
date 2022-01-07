@@ -1,5 +1,5 @@
-Create git repository
-Clone to local machine 
+Create git repository DONE
+Clone to local machine DONE
 Create live page in Github
 Submit Github repo to Bootcamp Spot
 Watch class video on 1/4/2022
@@ -18,7 +18,7 @@ Submit to Bootcamp Spot
 Acceptance Criteria:
 GIVEN I am using a daily planner to create a schedule
 WHEN I open the planner
-THEN the current day is displayed at the top of the calendar
+THEN the current day is displayed at the top of the calendar DONE
 WHEN I scroll down
 THEN I am presented with timeblocks for standard business hours
 WHEN I view the timeblocks for that day
@@ -55,7 +55,7 @@ Create a save button to persist input field to local storage
     -local storage function gets called immediately on page load
 Create a function that shows the curent time with an if statement that shows past, present, or future
     -use variable for currentHour = moment(.hour)
-    -Create a for loop and initialize athe first hour of timeblock and follow it with an if statement 
+    -Create a for loop and initialize the first hour of timeblock and follow it with an if statement 
     -condition: if currentHour < hour in timeblock, then color code input field with style gray
                 else if currentHour = hour in timeblock, then color code input field with style red 
                 else color with style code green
