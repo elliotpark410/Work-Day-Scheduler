@@ -5,10 +5,10 @@ Submit Github repo to Bootcamp Spot
 Watch class video on 1/4/2022
 Read README.md 
 Look at Student Resources
-Create pseudocode
+Create pseudocode DONE
 Watch youtube video (only when stuck)
 Beigin Coding
-    -link moment.js, jquery, bootstrap, and read documentation
+    -link moment.js, jquery, bootstrap, and read documentation DONE
 Create README
 Review grading criteria
 Make sure live page works

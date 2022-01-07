@@ -6,25 +6,25 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
 
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
-
-    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;700&display=swap" rel="stylesheet">
-
     <link
     rel="stylesheet"
-    href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
-    crossorigin="anonymous"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     />
-
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
     <link
       href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
       rel="stylesheet"
     />
-
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css"/>
 
     <title>Work Day Scheduler</title>
 
@@ -37,29 +37,75 @@
       <p id="currentDay" class="lead"></p>
     </header>
     <div class="container">
+
       <!-- Timeblocks go here -->
-      <div id="nine" class="hour"></div>
-      <div id="ten" class="hour"></div>
-      <div id="eleven" class="hour"></div>
-      <div id="twelve" class="hour"></div>
-      <div id="one" class="hour"></div>
-      <div id="two" class="hour"></div>
-      <div id="three" class="hour"></div>
-      <div id="four" class="hour"></div>
-      <div id="five" class="hour"></div>
+      <div id="nine" class="row time-block">
+        <p class="hour col-md-1">09am</p>
+        <textarea class="description col-md-10"></textarea>
+        <button class="saveBtn col-md-1"><i class="fas fa-save"></i></button>
+      </div> 
+      
+      <div id="ten" class="row time-block">
+        <p class="hour col-1">10am</p>
+        <textarea class="description col-10"></textarea>
+        <button class="saveBtn col-1"><i class="fas fa-save"></i></button>
+      </div>
+
+      <div id="eleven" class="row time-block">
+        <p class="hour col-1">11am</p>
+        <textarea class="description col-10"></textarea>
+        <button class="saveBtn col-1"><i class="fas fa-save"></i></button>
+      </div>
+
+      <div id="twelve" class="row time-block">
+        <p class="hour col-1">12pm</p>
+        <textarea class="description col-10"></textarea>
+        <button class="saveBtn col-1"><i class="fas fa-save"></i></button>
+      </div>
+
+      <div id="thirteen" class="row time-block">
+        <p class="hour col-1">01pm</p>
+        <textarea class="description col-10"></textarea>
+        <button class="saveBtn col-1"><i class="fas fa-save"></i></button>
+      </div>
+
+      <div id="fourteen" class="row time-block">
+        <p class="hour col-1">02pm</p>
+        <textarea class="description col-10"></textarea>
+        <button class="saveBtn col-1"><i class="fas fa-save"></i></button>
+      </div>
+
+      <div id="fifteen" class="row time-block">
+        <p class="hour col-1">03pm</p>
+        <textarea class="description col-10"></textarea>
+        <button class="saveBtn col-1"><i class="fas fa-save"></i></button>
+      </div>
+
+      <div id="sixteen" class="row time-block">
+        <p class="hour col-1">04pm</p>
+        <textarea class="description col-10"></textarea>
+        <button class="saveBtn col-1"><i class="fas fa-save"></i></button>
+      </div>
+
+      <div id="seventeen" class="row time-block">
+        <p class="hour col-1">05pm</p>
+        <textarea class="description col-10"></textarea>
+        <button class="saveBtn col-1"><i class="fas fa-save"></i></button>
+      </div>
+
+      <div id="eighteen" class="row time-block">
+        <p class="hour col-1">06pm</p>
+        <textarea class="description col-10"></textarea>
+        <button class="saveBtn col-1"><i class="fas fa-save"></i></button>
+      </div>
+
     </div>
 
-    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"></script>
-
     <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"></script>
-
     <script src="script.js"></script>
 
   </body>
