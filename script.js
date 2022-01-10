@@ -48,7 +48,7 @@ relationshipToTime();
 
 
 
-// Create variable for saveButton that selects the saveBtn with .saveBtn clas
+// Create variable for saveButton that selects the element with .saveBtn clas
 var saveButton= $(".saveBtn");
 
 // .on("click") is a jQuery shortcut to create an event handler on click 
@@ -82,6 +82,7 @@ function showSaved() {
     // Create savedHour variable that will get the text in the element with class ".hour"
     // Need to use $(this) so the variable stores the specific text associated with each element with ".hour" class
     var savedHour = $(this).text();
+    console.log(savedHour);
 
     // Create savedDescription variable that will get the savedHour variable (i.e. the text in the element with class ".hour") from local storage (e.g. 08AM, 09AM, etc)
     var savedDescription = localStorage.getItem(savedHour);
