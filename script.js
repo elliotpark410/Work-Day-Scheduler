@@ -82,7 +82,7 @@ function showSaved() {
     // Create savedHour variable that will get the text in the element with class ".hour"
     // Need to use $(this) so the variable stores all the hours with each element with ".hour" class
     var savedHours = $(this).text();
-    console.log(savedHour);
+    console.log(savedHours);
 
     // Get savedHours (i.e. the text in the element with class ".hour") from local storage (e.g. 08AM, 09AM, etc)
     // Create a variable called SavedDescriptions which will be used as an argument so localStorage can get description
