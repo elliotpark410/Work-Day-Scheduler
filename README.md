@@ -54,9 +54,13 @@ Here is a link to the Github repository
 
 This code snippet shows how to display persisted data that is saved in local storage
 
-* The document.createElement() method creates the HTML element by tagName and it can be done in JavaScript
+* The each() function is like a for loop, but it's a shorter syntax with the help of jQuery. It will commit the function for each element with a specified class or id 
 
-* The element.setAttribute() method sets the value of an attribute on a specified HTML element and it can be done in JavaScript
+* $(this) is self-referential and will refer to the function created above it
+
+* localStorage.getItem will retrieve the data that is already saved in local storage. I created a variable for localStorage.getItem and used it later as an argument to include savedDescription
+
+* Select elements in HTML page with Jquery $("element") and if an element is a sibling, you can use .siblings() method
 
 
 ```
@@ -77,19 +81,20 @@ showSaved();
 
 ## Deployed Link
 
-* [https://elliotpark410.github.io/Code-Quiz/](#)
+* [https://elliotpark410.github.io/Work-Day-Scheduler/](#)
 
 <br>
 
 ## Learning Points
 
-* How to use local storage, window.location, event listeners, appendChild, setAttributes, createElement, and more
+* How to use jQuery API, Bootstrap API, fontawesome API, and Google Fonts API
 <br>
 
-* The importance of using variables correctly and the importance of creating placeholder variables in the beginning
+* How to display multiple elements with local storage 
+
 <br>
 
-* The importance of using appendChild in the correct location. It should not always be right after the creation of the element 
+* How to use $(this) within the function to be self-referential of the function it is in 
 
 <br>
 
@@ -97,7 +102,7 @@ showSaved();
 
 * **Elliot Park** 
 
-- [Link to JavaScript Code Quiz application](https://elliotpark410.github.io/Code-Quiz/)
+- [Link to Work Day Scheduler application](https://elliotpark410.github.io/Work-Day-Scheduler/)
 - [Link to Github](https://github.com/elliotpark410)
 - [Link to LinkedIn](https://www.linkedin.com/in/elliot-park/)
 
