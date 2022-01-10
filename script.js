@@ -73,8 +73,6 @@ saveButton.on("click", function() {
 
 
 // Create a function to show variable that were saved to local storage so that when I refresh page the time and description will persist
-
-
 function showSaved() {
   // each() function is like a for loop
   // Create each function for elements with class ".hour"
@@ -86,10 +84,11 @@ function showSaved() {
     // Create savedDescription variable that will get the savedHour variable (i.e. the text in the element with class ".hour") from local storage (e.g. 08AM, 09AM, etc)
     var savedDescription = localStorage.getItem(savedHour);
 
-    // Use $(this) so that it can refer to the specific text associated with each element with ".hour" class
+    // Use $(this) so that it can refer to the object .each(function) for specific text associated with each element with ".hour" class
     // Get the value (i.e. text input) for the elements with the ".description" class 
-    // Enter argument (savedDescription) so that it is retrieved from loca storage
+    // Enter argument (savedDescription) so that it is also retrieved from local storage with savedHour
     $(this).siblings(".description").val(savedDescription);
+
   });
 }
 // Call function
