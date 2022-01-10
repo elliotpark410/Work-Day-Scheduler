@@ -3,7 +3,7 @@ var currentDay = moment();
 $("#currentDay").text(currentDay.format("MMM Do, YYYY"));
 
 
-// Create a function that can compare currenthour to timeBlockHour and see if it past, present, or future
+// Create a function that can compare currentHour to timeBlockHour and see if it past, present, or future
 function relationshipToTime() {
   var currrentHour = moment().hour();
 
@@ -13,14 +13,14 @@ function relationshipToTime() {
   // each() function is like a for loop
   // Create each function for elements with class "time-block"
   $(".time-block").each(function() {
-    // console logs each time-block and its children
+    // console logs each time-block div 
     console.log(this); 
 
 
     // create a variable for timeBlockHour
-    // parseInt - converts the argument into a string, which is needed to compare timeBlockHour and currentHour
+    // parseInt - converts the argument into a string, which is needed to compare timeBlockHour and currentHour because currentHour is returned as a string
     // $(this) is an object reference so it is referring to the $(".time-block").each function 
-    // attr() method returns the attribute associated with the id in $)".time-block"
+    // attr() method returns the attribute associated with the id in $(".time-block")
     var timeBlockHour = parseInt($(this).attr("id"));
     // console log the id associated with each time block hour in string format 
     console.log(timeBlockHour);
