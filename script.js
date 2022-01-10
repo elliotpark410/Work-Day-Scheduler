@@ -87,6 +87,7 @@ function showSaved() {
     // Use $(this) so that it can refer to the object .each(function) for specific text associated with each element with ".hour" class
     // Get the value (i.e. text input) for the elements with the ".description" class 
     // Enter argument (savedDescription) so that it is also retrieved from local storage with savedHour
+    // One of the ways to retrieve both savedHour and savedDescription with localStorage
     $(this).siblings(".description").val(savedDescription);
 
   });
