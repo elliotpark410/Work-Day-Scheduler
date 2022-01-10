@@ -28,14 +28,16 @@ function relationshipToTime() {
 
     // Create an if statement with a comparison codition so that each timeBlockHour gets a corresponding class (past, present, future)
     if (timeBlockHour === currrentHour) {
-        // $(this) is an object reference so it is referring to the $(".time-block").each function so it wass add "present" class to each time-block
+      // $(this) is an object reference so it is referring to the $(".time-block").each function so it will add "present" class to each time-block
       $(this).addClass("present");
 
     } else if (timeBlockHour < currrentHour) {
+      // $(this) is an object reference so it is referring to the $(".time-block").each function so it will add "past" class to each time-block
       $(this).addClass("past");
 
     } else {
       // (timeBlockHour > currentHour)
+      // $(this) is an object reference so it is referring to the $(".time-block").each function so it will add "future" class to each time-block
       $(this).addClass("future");
     }
   });
