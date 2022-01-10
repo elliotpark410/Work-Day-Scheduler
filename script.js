@@ -77,15 +77,16 @@ saveButton.on("click", function() {
 // Create a function to show variable that were saved to local storage so that when I refresh page the time and description will persist
 function showSaved() {
   // each() function is like a for loop
-  // Create each function for elements with class ".hour"
+  // Create each function for elements with class ".hour" so I don't have to repeat for every hour 
   $(".hour").each(function() {
     // Create savedHour variable that will get the text in the element with class ".hour"
-    // Need to use $(this) so the variable stores the specific text associated with each element with ".hour" class
-    var savedHour = $(this).text();
+    // Need to use $(this) so the variable stores all the hours with each element with ".hour" class
+    var savedHours = $(this).text();
     console.log(savedHour);
 
-    // Create savedDescription variable that will get the savedHour variable (i.e. the text in the element with class ".hour") from local storage (e.g. 08AM, 09AM, etc)
-    var savedDescription = localStorage.getItem(savedHour);
+    // Get savedHours (i.e. the text in the element with class ".hour") from local storage (e.g. 08AM, 09AM, etc)
+    // Create a variable so that it can be used 
+    var savedDescription = localStorage.getItem(savedHours);
 
     // Use $(this) so that it can refer to the object .each(function) for specific text associated with each element with ".hour" class
     // Get the value (i.e. text input) for the elements with the ".description" class 
