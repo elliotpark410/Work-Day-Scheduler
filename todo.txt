@@ -6,12 +6,11 @@ Watch class video on 1/4/2022 DONE
 Read README.md DONE
 Look at Student Resources DONE
 Create pseudocode DONE
-Beigin Coding
-    -link moment.js, jquery, bootstrap, and read documentation DONE
-Create README
-Review grading criteria
-Make sure live page works
-Submit to Bootcamp Spot
+Beigin Coding DONE
+Create README DONE
+Review grading criteria DONE
+Make sure live page works DONE
+Submit to Bootcamp Spot DONE
 
 
 Pseudocode:
