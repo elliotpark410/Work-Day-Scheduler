@@ -1,7 +1,7 @@
 Create git repository DONE
 Clone to local machine DONE
-Create live page in Github
-Submit Github repo to Bootcamp Spot
+Create live page in Github DONE
+Submit Github repo to Bootcamp Spot DONE
 Watch class video on 1/4/2022
 Read README.md 
 Look at Student Resources
@@ -45,20 +45,20 @@ Display current day at top of calendar with moment.js
     -create variable with hours for timeblock as an array 
     -create variables for currentDate and currentHour = moment(.date)
     -Create a h1 with id="currentDate" in html and create an h1.innerHTML or h1.textContent in JavaScript 
-With bootstrap, create a timeblock with an input field for hours 6am - 11pm (development) / 8am - 6pm (production)
+With CSS given, create a timeblock with an input field for hours 8am - 6pm (production)
     -Create a CSS table (3 columns and rows for number of hours)
     -display time to user with am and pm, but use military time for JS logic
     -create a div with an id for each row (i.e. each hour, input field, and save)
-Create a save button to persist input field to local storage
-    -create click event listener for save button which runs a function that will get the element.values in the input field and save to local storage
-    -create get local storage to fetch input that was saved with the input's id and display it with input.innerhtml
-    -local storage function gets called immediately on page load
 Create a function that shows the curent time with an if statement that shows past, present, or future
     -use variable for currentHour = moment(.hour)
     -Create a for loop and initialize the first hour of timeblock and follow it with an if statement 
     -condition: if currentHour < hour in timeblock, then color code input field with style gray
                 else if currentHour = hour in timeblock, then color code input field with style red 
                 else color with style code green
+Create a save button to persist input field to local storage
+    -create click event listener for save button which runs a function that will get the element.values in the input field and save to local storage
+    -create get local storage to fetch input that was saved with the input's id and display it with input.innerhtml
+    -local storage function gets called immediately on page load
 
 
 

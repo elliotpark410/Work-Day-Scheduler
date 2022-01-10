@@ -2,28 +2,28 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta nAMe="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
 
-
+    <!-- Linking bootstrap API -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+
+    <!-- Linking jquery API -->
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"/>
+
+    <!-- Linking fonts API -->
     <link
-    rel="stylesheet"
-    href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    />
-    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;700&display=swap" rel="stylesheet">
+      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
+      rel="stylesheet">
+
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
       integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
-      crossorigin="anonymous"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
-      rel="stylesheet"
-    />
+      crossorigin="anonymous"/>
+
+    <!-- local style.css has to be on bottom -->
     <link rel="stylesheet" href="style.css"/>
 
     <title>Work Day Scheduler</title>
@@ -34,78 +34,112 @@
     <header class="jumbotron">
       <h1 class="display-3">Work Day Scheduler</h1>
       <p class="lead">A simple calendar app for scheduling your work day</p>
+      <br>
       <p id="currentDay" class="lead"></p>
     </header>
     <div class="container">
 
       <!-- Timeblocks go here -->
-      <div id="nine" class="row time-block">
-        <p class="hour col-md-1">09am</p>
+
+      <!-- in time-block div, need to add id="8" so that moment.js can compare currentHour to timeBlockHour and id="9"for next div and etc-->
+      <div id="8" class="row time-block">
+        <div class="hour col-md-1">08AM</div>
+        <textarea class="description col-md-10"></textarea>
+        <button class="saveBtn col-md-1"><i class="fas fa-save"></i></button>
+      </div> 
+
+      <div id="9" class="row time-block">
+        <div class="hour col-md-1">09AM</div>
         <textarea class="description col-md-10"></textarea>
         <button class="saveBtn col-md-1"><i class="fas fa-save"></i></button>
       </div> 
       
-      <div id="ten" class="row time-block">
-        <p class="hour col-1">10am</p>
+      <div id="10" class="row time-block">
+        <div class="hour col-1">10AM</div>
         <textarea class="description col-10"></textarea>
         <button class="saveBtn col-1"><i class="fas fa-save"></i></button>
       </div>
 
-      <div id="eleven" class="row time-block">
-        <p class="hour col-1">11am</p>
+      <div id="11" class="row time-block">
+        <div class="hour col-1">11AM</div>
         <textarea class="description col-10"></textarea>
         <button class="saveBtn col-1"><i class="fas fa-save"></i></button>
       </div>
 
-      <div id="twelve" class="row time-block">
-        <p class="hour col-1">12pm</p>
+      <div id="12" class="row time-block">
+        <div class="hour col-1">12PM</div>
         <textarea class="description col-10"></textarea>
         <button class="saveBtn col-1"><i class="fas fa-save"></i></button>
       </div>
 
-      <div id="thirteen" class="row time-block">
-        <p class="hour col-1">01pm</p>
+      <div id="13" class="row time-block">
+        <div class="hour col-1">01PM</div>
         <textarea class="description col-10"></textarea>
         <button class="saveBtn col-1"><i class="fas fa-save"></i></button>
       </div>
 
-      <div id="fourteen" class="row time-block">
-        <p class="hour col-1">02pm</p>
+      <div id="14" class="row time-block">
+        <div class="hour col-1">02PM</div>
         <textarea class="description col-10"></textarea>
         <button class="saveBtn col-1"><i class="fas fa-save"></i></button>
       </div>
 
-      <div id="fifteen" class="row time-block">
-        <p class="hour col-1">03pm</p>
+      <div id="15" class="row time-block">
+        <div class="hour col-1">03PM</div>
         <textarea class="description col-10"></textarea>
         <button class="saveBtn col-1"><i class="fas fa-save"></i></button>
       </div>
 
-      <div id="sixteen" class="row time-block">
-        <p class="hour col-1">04pm</p>
+      <div id="16" class="row time-block">
+        <div class="hour col-1">04PM</div>
         <textarea class="description col-10"></textarea>
         <button class="saveBtn col-1"><i class="fas fa-save"></i></button>
       </div>
 
-      <div id="seventeen" class="row time-block">
-        <p class="hour col-1">05pm</p>
+      <div id="17" class="row time-block">
+        <div class="hour col-1">05PM</div>
         <textarea class="description col-10"></textarea>
         <button class="saveBtn col-1"><i class="fas fa-save"></i></button>
       </div>
 
-      <div id="eighteen" class="row time-block">
-        <p class="hour col-1">06pm</p>
+      <div id="18" class="row time-block">
+        <div class="hour col-1">06PM</div>
+        <textarea class="description col-10"></textarea>
+        <button class="saveBtn col-1"><i class="fas fa-save"></i></button>
+      </div>
+
+      <div id="19" class="row time-block">
+        <div class="hour col-1">07PM</div>
+        <textarea class="description col-10"></textarea>
+        <button class="saveBtn col-1"><i class="fas fa-save"></i></button>
+      </div>
+
+      <div id="20" class="row time-block">
+        <div class="hour col-1">08PM</div>
+        <textarea class="description col-10"></textarea>
+        <button class="saveBtn col-1"><i class="fas fa-save"></i></button>
+      </div>
+
+      <div id="21" class="row time-block">
+        <div class="hour col-1">09PM</div>
         <textarea class="description col-10"></textarea>
         <button class="saveBtn col-1"><i class="fas fa-save"></i></button>
       </div>
 
     </div>
 
+    <!-- Add CDN links -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"></script>
+
     <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"></script>
+
+    <!-- local script.js has to be on bottom -->
     <script src="script.js"></script>
 
   </body>
