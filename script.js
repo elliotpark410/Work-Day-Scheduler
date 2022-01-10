@@ -43,7 +43,7 @@ function relationshipToTime() {
   });
 }
 
-// Call function
+// Call relationshipToTime function
 relationshipToTime();
 
 
@@ -85,18 +85,17 @@ function showSaved() {
     console.log(savedHour);
 
     // Get savedHours (i.e. the text in the element with class ".hour") from local storage (e.g. 08AM, 09AM, etc)
-    // Create a variable so that it can be used 
+    // Create a variable called SavedDescriptions which will be used as an argument so localStorage can get description
     var savedDescription = localStorage.getItem(savedHours);
 
     // Use $(this) so that it can refer to the object .each(function) for specific text associated with each element with ".hour" class
     // Get the value (i.e. text input) for the elements with the ".description" class 
     // Enter argument (savedDescription) so that it is also retrieved from local storage with savedHour
-    // One of the ways to retrieve both savedHour and savedDescription with localStorage
     $(this).siblings(".description").val(savedDescription);
 
   });
 }
-// Call function
+// Call showSaved function
 showSaved();
 
 
